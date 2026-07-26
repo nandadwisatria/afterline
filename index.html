@@ -1,0 +1,2717 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afterline — Creative Digital Agency | Built After Vision</title>
+    <meta
+      name="description"
+      content="Afterline adalah Creative Digital Agency yang menyediakan Website Development, Video Editing, Logo & Branding, Graphic Design, Data Scraping, hingga Konveksi & Sablon untuk mewujudkan visi brand Anda."
+    />
+    <meta
+      name="keywords"
+      content="jasa website, digital agency, video editing, logo branding, graphic design, data scraping, konveksi sablon, afterline"
+    />
+    <meta name="author" content="Afterline" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Afterline — Built After Vision" />
+    <meta
+      property="og:description"
+      content="Creative Digital Agency yang menggabungkan teknologi dan kreativitas untuk membangun brand Anda."
+    />
+    <meta property="og:image" content="assets/logo-full.png" />
+    <meta property="og:locale" content="id_ID" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo-mark.png" />
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Afterline",
+        "slogan": "Built After Vision",
+        "description": "Creative Digital Agency menyediakan Website Development, Video Editing, Logo & Branding, Graphic Design, Data Scraping, dan Konveksi & Sablon.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bandar Lampung",
+          "addressCountry": "ID"
+        }
+      }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- AOS Animation (Lazy Load) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+
+    <!-- SwiperJS (Lazy Load) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <!-- ===================== PRELOADER ===================== -->
+    <div id="preloader" aria-hidden="true">
+      <div class="loader-mark">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="loaderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#38BDF8" />
+              <stop offset="50%" stop-color="#2563EB" />
+              <stop offset="100%" stop-color="#A855F7" />
+            </linearGradient>
+          </defs>
+          <circle
+            cx="50"
+            cy="50"
+            r="42"
+            fill="none"
+            stroke="url(#loaderGrad)"
+            stroke-width="8"
+            stroke-linecap="round"
+            stroke-dasharray="180 80"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="af-navbar navbar navbar-expand-lg" aria-label="Navigasi utama">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="#beranda" class="af-logo">
+          <img
+            src="assets/logo-mark.png"
+            alt="Logo Afterline"
+            class="logo-mark"
+          />
+          <span class="logo-text-wrap">
+            AFTERLINE
+            <span class="logo-tagline">Built After Vision</span>
+          </span>
+        </a>
+
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#afNavMenu"
+          aria-controls="afNavMenu"
+          aria-expanded="false"
+          aria-label="Buka menu navigasi"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse flex-grow-0" id="afNavMenu">
+          <ul class="af-nav-links navbar-nav">
+            <li>
+              <a href="#beranda" data-section="beranda" class="active"
+                >Beranda</a
+              >
+            </li>
+            <li><a href="#layanan" data-section="layanan">Layanan</a></li>
+            <li><a href="#tentang" data-section="tentang">Tentang</a></li>
+            <li>
+              <a href="#portofolio" data-section="portofolio">Portofolio</a>
+            </li>
+            <li><a href="#blog" data-section="blog">Blog</a></li>
+            <li><a href="#kontak" data-section="kontak">Kontak</a></li>
+          </ul>
+        </div>
+
+        <a href="#kontak" class="btn-af btn-af-primary d-none d-lg-inline-flex">
+          Hubungi Kami <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <header class="hero" id="beranda">
+      <div class="bg-decor">
+        <div
+          class="glow-blob blue"
+          style="width: 520px; height: 520px; top: -120px; left: -160px"
+        ></div>
+        <div
+          class="glow-blob purple"
+          style="width: 480px; height: 480px; bottom: -140px; right: -140px"
+        ></div>
+        <div class="mesh-lines"></div>
+      </div>
+
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="hero-badge-row">
+              <span class="eyebrow">Creative Digital Solutions</span>
+            </div>
+            <h1 class="hero-title">
+              Solusi Kreatif<br />
+              Untuk <span class="text-gradient">Brand Anda</span>
+            </h1>
+            <p class="hero-desc">
+              Afterline hadir untuk membantu bisnis dan personal mewujudkan ide
+              menjadi karya digital yang profesional — mulai dari
+              <span
+                id="typed-text"
+                class="text-gradient"
+                style="font-weight: 600"
+              ></span>
+            </p>
+            <div class="hero-cta-row">
+              <a href="#layanan" class="btn-af btn-af-primary"
+                >Lihat Layanan <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <a
+                href="https://t.me/afterlineid"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-af btn-af-outline"
+                >Join Member <i class="fa-solid fa-paper-plane"></i
+              ></a>
+            </div>
+            <div class="hero-clients">
+              <div class="avatar-stack">
+                <img
+                  src="https://i.pravatar.cc/150?img=12"
+                  alt="Klien Afterline"
+                  class="avatar"
+                />
+                <img
+                  src="https://i.pravatar.cc/150?img=32"
+                  alt="Klien Afterline"
+                  class="avatar"
+                />
+                <img
+                  src="https://i.pravatar.cc/150?img=47"
+                  alt="Klien Afterline"
+                  class="avatar"
+                />
+                <img
+                  src="https://i.pravatar.cc/150?img=5"
+                  alt="Klien Afterline"
+                  class="avatar"
+                />
+              </div>
+              <div class="hero-clients-text">
+                <strong>50+ Klien Puas</strong>
+                Bergabung bersama kami
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="hero-visual">
+              <div class="hero-orbit-ring r1"></div>
+              <div class="hero-orbit-ring r2"></div>
+
+              <div
+                class="hero-mini-card glass-card card-1"
+                data-service="Website Development"
+                role="button"
+                tabindex="0"
+              >
+                <i class="fa-solid fa-code"></i> Website Development
+              </div>
+              <div
+                class="hero-mini-card glass-card card-2"
+                data-service="Video Editing"
+                role="button"
+                tabindex="0"
+              >
+                <i class="fa-solid fa-film"></i> Video Editing
+              </div>
+              <div
+                class="hero-mini-card glass-card card-3"
+                data-service="Logo &amp; Branding"
+                role="button"
+                tabindex="0"
+              >
+                <i class="fa-solid fa-palette"></i> Logo &amp; Branding
+              </div>
+              <div
+                class="hero-mini-card glass-card card-4"
+                data-service="Graphic Design"
+                role="button"
+                tabindex="0"
+              >
+                <i class="fa-solid fa-swatchbook"></i> Graphic Design
+              </div>
+              <div
+                class="hero-mini-card glass-card card-5"
+                data-service="Data Scraping"
+                role="button"
+                tabindex="0"
+              >
+                <i class="fa-solid fa-chart-line"></i> Data Scraping
+              </div>
+              <div
+                class="hero-mini-card glass-card card-6"
+                data-service="Preprocessing Data"
+                role="button"
+                tabindex="0"
+              >
+                <i class="fa-solid fa-filter"></i> Preprocessing Data
+              </div>
+              <div
+                class="hero-mini-card glass-card card-7"
+                data-service="Konveksi &amp; Sablon"
+                role="button"
+                tabindex="0"
+              >
+                <i class="fa-solid fa-shirt"></i> Konveksi &amp; Sablon
+              </div>
+              <div
+                class="hero-mini-card glass-card card-8"
+                data-service="Iklan Aplikasi"
+                role="button"
+                tabindex="0"
+              >
+                <i class="fa-solid fa-bullhorn"></i> Iklan Aplikasi
+              </div>
+              <div
+                class="hero-mini-card glass-card card-9"
+                data-service="Pembuatan Aplikasi"
+                role="button"
+                tabindex="0"
+              >
+                <i class="fa-solid fa-mobile-screen-button"></i> Pembuatan
+                Aplikasi
+              </div>
+              <div
+                class="hero-mini-card glass-card card-10"
+                data-service="Sistem Computer Vision"
+                role="button"
+                tabindex="0"
+              >
+                <i class="fa-solid fa-eye"></i> Sistem Computer Vision
+              </div>
+              <div
+                class="hero-mini-card glass-card card-11"
+                data-service="Konsultasi Custom"
+                role="button"
+                tabindex="0"
+              >
+                <i class="fa-solid fa-headset"></i> Konsultasi Custom
+              </div>
+              <div
+                class="hero-mini-card glass-card card-12"
+                data-service="Edit Foto"
+                role="button"
+                tabindex="0"
+              >
+                <i class="fa-solid fa-image"></i> Edit Foto
+              </div>
+
+              <div class="hero-platform"></div>
+              <div class="hero-platform-ring"></div>
+
+              <div class="hero-logo-wrap">
+                <div class="hero-logo-parallax">
+                  <div
+                    class="hero-logo-svg-wrap"
+                    id="heroLogoSvgWrap"
+                    role="img"
+                    aria-label="Logo AFTERLINE — seret untuk memutar Objek"
+                  >
+                    <div class="hero-logo-3d-stage" id="logo3dStage">
+                      <svg
+                        id="logoDrawSvg"
+                        viewBox="0 0 240 220"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <defs>
+                          <linearGradient
+                            id="gradLeftLeg"
+                            x1="122"
+                            y1="20"
+                            x2="42"
+                            y2="196"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop offset="0%" stop-color="#2563EB" />
+                            <stop offset="100%" stop-color="#38BDF8" />
+                          </linearGradient>
+                          <linearGradient
+                            id="gradRightLeg"
+                            x1="122"
+                            y1="20"
+                            x2="202"
+                            y2="196"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop offset="0%" stop-color="#7C3AED" />
+                            <stop offset="100%" stop-color="#D946EF" />
+                          </linearGradient>
+                          <linearGradient
+                            id="gradArc"
+                            x1="84"
+                            y1="160"
+                            x2="160"
+                            y2="160"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop offset="0%" stop-color="#2563EB" />
+                            <stop offset="100%" stop-color="#7C3AED" />
+                          </linearGradient>
+                        </defs>
+                        <g
+                          id="logoRotateGroup"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-width="16"
+                        >
+                          <path
+                            id="logoLeftPath"
+                            d="M122,20 L42,196"
+                            stroke="url(#gradLeftLeg)"
+                          />
+                          <path
+                            id="logoRightPath"
+                            d="M122,20 L202,196"
+                            stroke="url(#gradRightLeg)"
+                          />
+                          <path
+                            id="logoArcPath"
+                            d="M84,160 A38,38 0 0 1 160,160"
+                            stroke="url(#gradArc)"
+                            stroke-width="13"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="hero-logo-hint" id="heroLogoHint">
+                    <i class="fa-solid fa-cube"></i> Seret untuk memutar Objek
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entrance sound -->
+        <audio
+          id="enterSound"
+          src="assets/sound/enter-sound.mp3"
+          preload="auto"
+        ></audio>
+
+        <!-- Floating Action Menu -->
+        <div class="af-float-menu" id="afFloatMenu">
+          <button
+            class="af-float-toggle"
+            id="afFloatToggle"
+            aria-label="Buka menu"
+            title="Buka menu"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="af-float-items">
+            <a
+              href="https://wa.me/6282289331347?text=Halo%20Afterline%2C%20saya%20ingin%20bertanya%20mengenai%20layanan%20yang%20tersedia ?"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="af-float-item wa-item"
+              data-tooltip="WhatsApp"
+              aria-label="WhatsApp"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <button
+              class="af-float-item theme-item"
+              id="themeToggle"
+              data-tooltip="Ganti Tema"
+              aria-label="Ganti tema"
+            >
+              <i class="fa-solid fa-moon"></i>
+            </button>
+            <button
+              class="af-float-item sound-item"
+              id="soundToggle"
+              data-tooltip="Suara"
+              aria-label="Aktif/nonaktifkan suara"
+            >
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Stats Strip -->
+        <div class="row stats-strip g-4">
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="0">
+            <div class="stat-item glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+              <div>
+                <div class="stat-value">
+                  <span data-counter="50" data-suffix="+">0</span>
+                </div>
+                <div class="stat-label">Klien Puas</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-item glass-card">
+              <div class="stat-icon">
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+              <div>
+                <div class="stat-value">
+                  <span data-counter="50" data-suffix="+">0</span>
+                </div>
+                <div class="stat-label">Proyek Selesai</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-item glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <div class="stat-value">
+                  <span data-counter="2" data-suffix="+">0</span>
+                </div>
+                <div class="stat-label">Tahun Pengalaman</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="stat-item glass-card">
+              <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+              <div>
+                <div class="stat-value">
+                  <span data-counter="4.9">0</span>/5
+                </div>
+                <div class="stat-label">Rata-rata Rating</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="services-section" id="layanan">
+      <div class="bg-decor">
+        <div
+          class="glow-blob blue"
+          style="width: 400px; height: 400px; top: 10%; right: -140px"
+        ></div>
+      </div>
+      <div class="container">
+        <div
+          class="row justify-content-center text-center section-header"
+          data-aos="fade-up"
+        >
+          <div class="col-lg-7">
+            <span class="eyebrow"
+              ><i class="fa-solid fa-layer-group"></i> Layanan Kami</span
+            >
+            <h2 class="section-title">
+              Berbagai Layanan
+              <span class="text-gradient">Kreatif dan Digital</span>
+            </h2>
+            <p class="section-sub mx-auto mt-3">
+              Afterline menyediakan solusi digital lengkap yang dirancang untuk
+              memenuhi kebutuhan brand, bisnis, dan personal Anda — dari dunia
+              digital hingga produk fisik, termasuk editing foto profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="service-card glass-card flip-front">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                  <h3>Website Development</h3>
+                  <button type="button" class="service-link flip-trigger">
+                    Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="service-card glass-card flip-back">
+                  <h3>Website Development</h3>
+                  <p>
+                    Kami membangun company profile, landing page, hingga sistem
+                    e-commerce menggunakan teknologi modern. Termasuk optimasi
+                    SEO on-page, tampilan responsif di semua perangkat, serta
+                    integrasi form, database, dan API sesuai kebutuhan bisnis
+                    Anda.
+                  </p>
+                  <a href="#kontak" class="service-link"
+                    >Hubungi Kami <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                  <button type="button" class="flip-close" aria-label="Tutup">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="service-card glass-card flip-front">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-film"></i>
+                  </div>
+                  <h3>Video Editing</h3>
+                  <button type="button" class="service-link flip-trigger">
+                    Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="service-card glass-card flip-back">
+                  <h3>Video Editing</h3>
+                  <p>
+                    Editing video promosi, iklan sosial media, dokumentasi
+                    event, hingga konten sinematik. Termasuk color grading,
+                    motion graphics, sound design, dan penyesuaian format untuk
+                    YouTube, Reels, TikTok, maupun kebutuhan internal
+                    perusahaan.
+                  </p>
+                  <a href="#kontak" class="service-link"
+                    >Hubungi Kami <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                  <button type="button" class="flip-close" aria-label="Tutup">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="service-card glass-card flip-front">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-pen-nib"></i>
+                  </div>
+                  <h3>Logo &amp; Branding</h3>
+                  <button type="button" class="service-link flip-trigger">
+                    Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="service-card glass-card flip-back">
+                  <h3>Logo &amp; Branding</h3>
+                  <p>
+                    Perancangan logo, pemilihan tipografi dan palet warna,
+                    hingga brand guideline lengkap (variasi logo, aturan
+                    penggunaan, penerapan pada media). Kami bantu bangun
+                    identitas visual yang konsisten di semua touchpoint brand
+                    Anda.
+                  </p>
+                  <a href="#kontak" class="service-link"
+                    >Hubungi Kami <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                  <button type="button" class="flip-close" aria-label="Tutup">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="service-card glass-card flip-front">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-swatchbook"></i>
+                  </div>
+                  <h3>Graphic Design</h3>
+                  <button type="button" class="service-link flip-trigger">
+                    Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="service-card glass-card flip-back">
+                  <h3>Graphic Design</h3>
+                  <p>
+                    Desain konten feed & story sosial media, banner promosi,
+                    poster, kemasan produk, hingga materi presentasi bisnis.
+                    Semua dirancang relevan dan konsisten dengan identitas brand
+                    Anda.
+                  </p>
+                  <a href="#kontak" class="service-link"
+                    >Hubungi Kami <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                  <button type="button" class="flip-close" aria-label="Tutup">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="service-card glass-card flip-front">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-database"></i>
+                  </div>
+                  <h3>Data Scraping</h3>
+                  <button type="button" class="service-link flip-trigger">
+                    Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="service-card glass-card flip-back">
+                  <h3>Data Scraping</h3>
+                  <p>
+                    Pengambilan data dari website, marketplace, atau sumber
+                    publik lain secara otomatis dan terstruktur, untuk riset
+                    pasar, monitoring kompetitor, maupun input machine learning.
+                    Data diberikan dalam format rapi (CSV/Excel/JSON) siap
+                    pakai.
+                  </p>
+                  <a href="#kontak" class="service-link"
+                    >Hubungi Kami <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                  <button type="button" class="flip-close" aria-label="Tutup">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="service-card glass-card flip-front">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-shirt"></i>
+                  </div>
+                  <h3>Konveksi &amp; Sablon</h3>
+                  <button type="button" class="service-link flip-trigger">
+                    Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="service-card glass-card flip-back">
+                  <h3>Konveksi &amp; Sablon</h3>
+                  <p>
+                    Produksi kaos, hoodie, jaket, hingga merchandise custom
+                    dengan pilihan bahan berkualitas dan teknik sablon (DTF,
+                    plastisol, sublimasi). Cocok untuk brand, event, komunitas,
+                    hingga seragam perusahaan sesuai jumlah pesanan.
+                  </p>
+                  <a href="#kontak" class="service-link"
+                    >Hubungi Kami <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                  <button type="button" class="flip-close" aria-label="Tutup">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="service-card glass-card flip-front">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-filter"></i>
+                  </div>
+                  <h3>Preprocessing Data</h3>
+                  <button type="button" class="service-link flip-trigger">
+                    Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="service-card glass-card flip-back">
+                  <h3>Preprocessing Data</h3>
+                  <p>
+                    Pembersihan data mentah (missing value, duplikasi, outlier),
+                    transformasi format, normalisasi, hingga feature engineering
+                    agar dataset siap dipakai untuk analisis statistik maupun
+                    pelatihan model machine learning.
+                  </p>
+                  <a href="#kontak" class="service-link"
+                    >Hubungi Kami <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                  <button type="button" class="flip-close" aria-label="Tutup">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="service-card glass-card flip-front">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-bullhorn"></i>
+                  </div>
+                  <h3>Iklan Aplikasi</h3>
+                  <button type="button" class="service-link flip-trigger">
+                    Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="service-card glass-card flip-back">
+                  <h3>Iklan Aplikasi</h3>
+                  <p>
+                    Strategi promosi aplikasi di Google Ads, Meta Ads, atau App
+                    Store/Play Store, termasuk pembuatan materi kreatif iklan
+                    dan targeting audiens agar meningkatkan jumlah instalasi dan
+                    engagement pengguna.
+                  </p>
+                  <a href="#kontak" class="service-link"
+                    >Hubungi Kami <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                  <button type="button" class="flip-close" aria-label="Tutup">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="service-card glass-card flip-front">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                  </div>
+                  <h3>Pembuatan Aplikasi</h3>
+                  <button type="button" class="service-link flip-trigger">
+                    Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="service-card glass-card flip-back">
+                  <h3>Pembuatan Aplikasi</h3>
+                  <p>
+                    Pengembangan aplikasi mobile (Android/iOS) maupun web app
+                    sesuai kebutuhan bisnis, mulai dari UI/UX, backend,
+                    integrasi database, hingga publikasi ke Play Store/App
+                    Store.
+                  </p>
+                  <a href="#kontak" class="service-link"
+                    >Hubungi Kami <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                  <button type="button" class="flip-close" aria-label="Tutup">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="service-card glass-card flip-front">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-eye"></i>
+                  </div>
+                  <h3>Sistem Computer Vision</h3>
+                  <button type="button" class="service-link flip-trigger">
+                    Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="service-card glass-card flip-back">
+                  <h3>Sistem Computer Vision</h3>
+                  <p>
+                    Pengembangan sistem deteksi objek, pengenalan wajah, OCR,
+                    atau analisis visual otomatis berbasis AI/deep learning
+                    untuk kebutuhan otomasi industri, keamanan, maupun riset.
+                  </p>
+                  <a href="#kontak" class="service-link"
+                    >Hubungi Kami <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                  <button type="button" class="flip-close" aria-label="Tutup">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="service-card glass-card flip-front">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-image"></i>
+                  </div>
+                  <h3>Edit Foto</h3>
+                  <button type="button" class="service-link flip-trigger">
+                    Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="service-card glass-card flip-back">
+                  <h3>Edit Foto</h3>
+                  <p>
+                    Retouching produk, portrait, hingga foto event dengan hasil
+                    rapi dan profesional. Termasuk background removal, color
+                    correction, dan penyesuaian ukuran untuk kebutuhan katalog
+                    maupun sosial media.
+                  </p>
+                  <a href="#kontak" class="service-link"
+                    >Hubungi Kami <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                  <button type="button" class="flip-close" aria-label="Tutup">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="service-card glass-card flip-front">
+                  <div class="service-icon">
+                    <i class="fa-solid fa-headset"></i>
+                  </div>
+                  <h3>Konsultasi Custom</h3>
+                  <button type="button" class="service-link flip-trigger">
+                    Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+                <div class="service-card glass-card flip-back">
+                  <h3>Konsultasi Custom</h3>
+                  <p>
+                    Sesi diskusi untuk kebutuhan yang tidak tercantum di layanan
+                    utama. Kami bantu analisa kebutuhan Anda dan berikan solusi
+                    teknis maupun kreatif yang paling sesuai dengan budget dan
+                    timeline Anda.
+                  </p>
+                  <a href="#kontak" class="service-link"
+                    >Hubungi Kami <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                  <button type="button" class="flip-close" aria-label="Tutup">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-cta" data-aos="fade-up">
+          <div>
+            <h4>Butuh layanan khusus?</h4>
+            <p>
+              Kami siap diskusi dan memberikan solusi terbaik untuk kebutuhan
+              Anda.
+            </p>
+          </div>
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="#kontak" class="btn-af btn-af-primary"
+              >Konsultasi Sekarang <i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <a
+              href="#testimoni"
+              class="btn-af btn-af-outline"
+              style="
+                background: rgba(255, 255, 255, 0.15);
+                color: #fff;
+                border-color: rgba(255, 255, 255, 0.3);
+              "
+            >
+              Kata Mereka <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHY CHOOSE US ===================== -->
+<section id="tentang">
+  <div class="bg-decor">
+    <div
+      class="glow-blob purple"
+      style="width: 420px; height: 420px; bottom: 0%; left: -160px"
+    ></div>
+  </div>
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="why-illustration">
+          <!-- Dekorasi: pola titik-titik -->
+          <div class="why-decor-dots"></div>
+
+          <!-- Dekorasi: garis lengkung tipis -->
+        <svg class="why-decor-line line-top" viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5,55 C50,15 110,15 155,45" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" opacity="0.45" />
+        </svg>
+              <svg class="why-decor-line line-left" viewBox="0 0 50 195" xmlns="http://www.w3.org/2000/svg">
+        <path d="M40,8 C10,50 6,140 30,188" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" opacity="0.45" />
+      </svg>
+<svg class="why-decor-line line-right" viewBox="0 0 40 200" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8,6 C30,50 32,130 10,192" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" opacity="0.4" />
+</svg>
+<svg class="why-decor-line line-bottom" viewBox="0 0 260 38" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6,8 C65,34 195,32 254,28" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" opacity="0.45" />
+</svg>
+
+          <!-- Dekorasi: titik & plus kecil -->
+          <span class="why-decor-dot dot-1"></span>
+          <span class="why-decor-dot dot-2"></span>
+          <span class="why-decor-plus plus-1"><i class="fa-solid fa-plus"></i></span>
+          <span class="why-decor-plus plus-2"><i class="fa-solid fa-plus"></i></span>
+
+          <!-- Foto: sudah berbentuk blob dari file PNG, tidak perlu border-radius -->
+          <img
+            src="assets/tentang.png"
+            alt="Tim Afterline berdiskusi"
+            class="why-illustration-img"
+          />
+
+          <!-- Badge melayang -->
+          <div class="why-badge badge-tl">
+            <div class="why-badge-icon">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <div>
+              <strong>Creative Team</strong>
+              <span>Bersama mewujudkan ide jadi solusi digital</span>
+            </div>
+          </div>
+
+          <div class="why-badge badge-tr">
+            <div class="why-badge-icon">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div>
+              <strong>2+ Tahun</strong>
+              <span>Pengalaman</span>
+            </div>
+          </div>
+
+          <div class="why-badge badge-bc">
+            <div class="why-badge-icon">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div>
+              <strong>Solusi Inovatif</strong>
+              <span>Kreatif, modern, & berdampak</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <span class="eyebrow"
+          ><i class="fa-solid fa-award"></i> Kenapa Memilih Kami</span
+        >
+        <h2 class="section-title mb-3">
+          Solusi Digital Kreatif
+          <span class="text-gradient">Untuk Masa Depan</span>
+        </h2>
+        <p class="section-sub mb-3">
+          Afterline adalah agensi kreatif yang berfokus pada solusi digital
+          untuk membantu bisnis dan personal branding berkembang lebih cepat
+          dan berdaya saing.
+        </p>
+
+        <div class="why-feature">
+          <div class="why-feature-icon">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <div>
+            <h5>Tim Berpengalaman</h5>
+            <p>
+              Profesional di bidangnya dengan jam terbang tinggi di setiap
+              layanan.
+            </p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="why-feature-icon">
+            <i class="fa-solid fa-shapes"></i>
+          </div>
+          <div>
+            <h5>Desain Kreatif</h5>
+            <p>
+              Setiap karya dirancang unik, relevan, dan sesuai karakter
+              brand Anda.
+            </p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="why-feature-icon">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div>
+            <h5>Pengerjaan Cepat</h5>
+            <p>
+              Proses kerja efisien dengan standar kualitas yang tetap
+              terjaga.
+            </p>
+          </div>
+        </div>
+        <div class="why-feature">
+          <div class="why-feature-icon">
+            <i class="fa-solid fa-tags"></i>
+          </div>
+          <div>
+            <h5>Harga Bersahabat</h5>
+            <p>Solusi terbaik dengan investasi yang sesuai budget Anda.</p>
+          </div>
+        </div>
+
+        <div class="why-stats">
+          <div class="why-stat">
+            <div class="counter">
+              <span data-counter="50" data-suffix="+">0</span>
+            </div>
+            <span class="label">Klien Puas</span>
+          </div>
+          <div class="why-stat">
+            <div class="counter">
+              <span data-counter="50" data-suffix="+">0</span>
+            </div>
+            <span class="label">Proyek Selesai</span>
+          </div>
+          <div class="why-stat">
+            <div class="counter">
+              <span data-counter="100" data-suffix="%">0</span>
+            </div>
+            <span class="label">Komitmen Kualitas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ===================== PROCESS ===================== -->
+    <section class="process-section">
+      <div class="container">
+        <div
+          class="row justify-content-center text-center section-header"
+          data-aos="fade-up"
+        >
+          <div class="col-lg-7">
+            <span class="eyebrow"
+              ><i class="fa-solid fa-route"></i> Proses Kerja</span
+            >
+            <h2 class="section-title">
+              Alur <span class="text-gradient">Kerja Kami</span>
+            </h2>
+            <p class="section-sub mx-auto mt-3">
+              Proses yang jelas dan terstruktur untuk menghasilkan karya terbaik
+              di setiap tahapan.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-track row g-4">
+          <div class="process-line d-none d-md-block">
+            <div class="process-line-fill"></div>
+          </div>
+
+          <div
+            class="col-6 col-md-3 process-step"
+            data-aos="zoom-in"
+            data-aos-delay="0"
+          >
+            <div class="process-num">01</div>
+            <h5>Diskusi</h5>
+            <p>Kami mendengarkan kebutuhan dan tujuan proyek Anda.</p>
+          </div>
+          <div
+            class="col-6 col-md-3 process-step"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="process-num">02</div>
+            <h5>Planning</h5>
+            <p>Menyusun rencana kerja dan strategi yang tepat.</p>
+          </div>
+          <div
+            class="col-6 col-md-3 process-step"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="process-num">03</div>
+            <h5>Development</h5>
+            <p>
+              Proses pengerjaan dengan standar kualitas terbaik dan tepat waktu.
+            </p>
+          </div>
+          <div
+            class="col-6 col-md-3 process-step"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="process-num">04</div>
+            <h5>Launch</h5>
+            <p>
+              Hasil akhir dikirim dan kami pastikan Anda puas dengan hasilnya.
+            </p>
+          </div>
+        </div>
+
+        <div class="services-cta process-cta" data-aos="fade-up">
+          <div>
+            <h4>Punya proyek menarik?</h4>
+            <p>Wujudkan ide Anda bersama Afterline sekarang juga.</p>
+          </div>
+          <a href="#harga" class="btn-af btn-af-primary"
+            >Mulai Proyek <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PORTFOLIO ===================== -->
+    <section id="portofolio">
+      <div class="bg-decor">
+        <div
+          class="glow-blob blue"
+          style="width: 460px; height: 460px; top: 0; right: -180px"
+        ></div>
+      </div>
+      <div class="container">
+        <div
+          class="row justify-content-center text-center section-header"
+          data-aos="fade-up"
+        >
+          <div class="col-lg-7">
+            <span class="eyebrow"
+              ><i class="fa-solid fa-images"></i> Portofolio Kami</span
+            >
+            <h2 class="section-title">
+              Beberapa Hasil <span class="text-gradient">Karya Kami</span>
+            </h2>
+            <p class="section-sub mx-auto mt-3">
+              Karya terbaik kami untuk berbagai kebutuhan klien.
+            </p>
+          </div>
+        </div>
+
+        <div class="portfolio-filters" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="website">Website</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+          <button class="filter-btn" data-filter="video">Video</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+          <button class="filter-btn" data-filter="data">Data</button>
+        </div>
+
+        <div class="row">
+          <div
+            class="col-md-6 col-lg-4 portfolio-item"
+            data-category="website"
+            data-title="Website Company Profile"
+            data-desc="Pengembangan website company profile modern dan responsif untuk memperkuat kredibilitas perusahaan di ranah digital."
+            data-category-label="Web Development"
+            data-aos="fade-up"
+          >
+            <div class="portfolio-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80"
+                alt="Website Company Profile"
+                loading="lazy"
+              />
+              <div class="portfolio-overlay">
+                <span class="cat">Web Development</span>
+                <h5>Website Company Profile</h5>
+              </div>
+              <div class="portfolio-view-btn">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4 portfolio-item portfolio-video-item"
+            data-category="video"
+            data-title="Short Movie — Aksi Hijau"
+            data-desc="Short movie pendek dengan tema aksi hijau yang mengangkat isu lingkungan dengan gaya sinematik dan storytelling yang kuat — diproduksi untuk kampanye kesadaran lingkungan."
+            data-category-label="Video Editing"
+            data-video-index="0"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="portfolio-thumb">
+              <div class="portfolio-video-thumb-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80"
+                  alt="Short Movie Aksi Hijau"
+                  loading="lazy"
+                  class="portfolio-video-thumb-img"
+                />
+                <div class="portfolio-play-overlay">
+                  <span class="portfolio-play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <span class="cat">Video Editing</span>
+                <h5>Short Movie — Aksi Hijau</h5>
+              </div>
+              <div class="portfolio-view-btn">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4 portfolio-item"
+            data-category="branding"
+            data-title="Logo &amp; Branding — Forgear"
+            data-desc="Perancangan logo dan identitas visual untuk brand Forgear yang merepresentasikan kekuatan dan presisi."
+            data-category-label="Graphic Design"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="portfolio-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80"
+                alt="Logo dan Branding Forgear"
+                loading="lazy"
+              />
+              <div class="portfolio-overlay">
+                <span class="cat">Graphic Design</span>
+                <h5>Logo &amp; Branding — Forgear</h5>
+              </div>
+              <div class="portfolio-view-btn">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4 portfolio-item"
+            data-category="website"
+            data-title="Landing Page E-commerce"
+            data-desc="Landing page koleksi produk terbaru dengan tampilan modern yang mendorong konversi penjualan."
+            data-category-label="Web Development"
+            data-aos="fade-up"
+          >
+            <div class="portfolio-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                alt="Landing Page E-commerce"
+                loading="lazy"
+              />
+              <div class="portfolio-overlay">
+                <span class="cat">Web Development</span>
+                <h5>Landing Page E-commerce</h5>
+              </div>
+              <div class="portfolio-view-btn">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4 portfolio-item portfolio-video-item"
+            data-category="video"
+            data-title="Video Dokumentasi — Komnas"
+            data-desc="Video dokumentasi kegiatan Komnas dengan editing profesional, mencakup wawancara, footage lapangan, dan narasi yang informatif."
+            data-category-label="Video Editing"
+            data-video-index="1"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="portfolio-thumb">
+              <div class="portfolio-video-thumb-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=80"
+                  alt="Video Dokumentasi Komnas"
+                  loading="lazy"
+                  class="portfolio-video-thumb-img"
+                />
+                <div class="portfolio-play-overlay">
+                  <span class="portfolio-play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <span class="cat">Video Editing</span>
+                <h5>Video Dokumentasi — Komnas</h5>
+              </div>
+              <div class="portfolio-view-btn">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4 portfolio-item"
+            data-category="data"
+            data-title="Crawling Data Bandar Lampung — SVM &amp; RoBERTa"
+            data-desc="Scraping data dari berbagai sumber di Bandar Lampung dengan total 20.000+ data. Dilakukan preprocessing lengkap (cleaning, normalisasi, labeling) dan training menggunakan algoritma SVM dan RoBERTa untuk analisis sentimen dan klasifikasi teks yang akurat."
+            data-category-label="Data Scraping & ML"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="portfolio-thumb">
+              <img
+                src="assets/portofolio/data1nuju.png"
+                alt="Crawling Data Bandar Lampung"
+                loading="lazy"
+              />
+              <div class="portfolio-overlay">
+                <span class="cat">Data Scraping &amp; ML</span>
+                <h5>Crawling Data Bandar Lampung — 20rb+ Data</h5>
+              </div>
+              <div class="portfolio-view-btn">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4 portfolio-item"
+            data-category="data"
+            data-title="Scraping Data Multi Bank — Analisis Sentimen"
+            data-desc="Proyek scraping data dari berbagai bank (BNI, Mandiri, BCA, dan lainnya) dengan total puluhan ribu data. Data diproses melalui tahap preprocessing (clean, tokenize, normalize) dan dilatih menggunakan SVM serta RoBERTa untuk klasifikasi dan analisis tren layanan perbankan."
+            data-category-label="Data Scraping & ML"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="portfolio-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80"
+                alt="Scraping Data Multi Bank"
+                loading="lazy"
+              />
+              <div class="portfolio-overlay">
+                <span class="cat">Data Scraping &amp; ML</span>
+                <h5>Scraping Multi Bank — Puluhan Ribu Data</h5>
+              </div>
+              <div class="portfolio-view-btn">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4 portfolio-item"
+            data-category="data"
+            data-title="Crawling Bank BRI — 10rb Data"
+            data-desc="Scraping data dari platform digital Bank BRI sebanyak 10.000+ data. Seluruh data melalui proses preprocessing (pembersihan, tokenisasi, konversi) dan training menggunakan SVM serta RoBERTa untuk analisis opini publik terhadap layanan perbankan BRI."
+            data-category-label="Data Scraping & ML"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="portfolio-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                alt="Crawling Bank BRI"
+                loading="lazy"
+              />
+              <div class="portfolio-overlay">
+                <span class="cat">Data Scraping &amp; ML</span>
+                <h5>Crawling Bank BRI — 10rb Data</h5>
+              </div>
+              <div class="portfolio-view-btn">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4 portfolio-item"
+            data-category="design"
+            data-title="Merchandise &amp; Sablon Komunitas"
+            data-desc="Produksi kaos dan merchandise sablon custom untuk komunitas dengan kualitas cetak yang tahan lama."
+            data-category-label="Konveksi & Sablon"
+            data-aos="fade-up"
+          >
+            <div class="portfolio-thumb">
+              <img
+                src="assets/portofolio/design1baju.png"
+                alt="Merchandise dan Sablon Komunitas"
+                loading="lazy"
+              />
+              <div class="portfolio-overlay">
+                <span class="cat">Konveksi &amp; Sablon</span>
+                <h5>Merchandise &amp; Sablon Komunitas</h5>
+              </div>
+              <div class="portfolio-view-btn">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4 portfolio-item"
+            data-category="design"
+            data-title="Konten Sosial Media Kuliner"
+            data-desc="Desain visual feed dan konten promosi untuk brand kuliner yang konsisten dan menarik perhatian."
+            data-category-label="Graphic Design"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="portfolio-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+                alt="Konten Sosial Media Kuliner"
+                loading="lazy"
+              />
+              <div class="portfolio-overlay">
+                <span class="cat">Graphic Design</span>
+                <h5>Konten Sosial Media Kuliner</h5>
+              </div>
+              <div class="portfolio-view-btn">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-4 portfolio-item"
+            data-category="branding"
+            data-title="Branding Afterline — Identitas &amp; Branding"
+            data-desc="Afterline membantu perusahaan dan UMKM membangun identitas brand yang kuat, mulai dari logo, pemilihan palet warna, tipografi, hingga panduan visual yang konsisten — cocok untuk usaha kecil hingga perusahaan."
+            data-category-label="Graphic Design"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="portfolio-thumb">
+              <img
+                src="assets/logo-full.png"
+                alt="Identitas Brand Afterline"
+                loading="lazy"
+              />
+              <div class="portfolio-overlay">
+                <span class="cat">Graphic Design</span>
+                <h5>Branding Afterline — Identitas &amp; Branding</h5>
+              </div>
+              <div class="portfolio-view-btn">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </div>
+          </div>
+
+<!-- Video Racap Tugas Kuliah — Kunjungan Industri Mayora -->
+          <div
+            class="col-md-6 col-lg-4 portfolio-item portfolio-video-item"
+            data-category="video"
+            data-title="Video Racap Tugas Kuliah — Kunjungan Industri Mayora"
+            data-desc="Video penjelasan dan dokumentasi kunjungan industri ke Mayora, mencakup proses produksi dan wawasan dunia industri yang disajikan secara informatif dan edukatif."
+            data-category-label="Video Editing"
+            data-video-index="2"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="portfolio-thumb">
+              <div class="portfolio-video-thumb-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+                  alt="Kunjungan Industri Mayora"
+                  loading="lazy"
+                  class="portfolio-video-thumb-img"
+                />
+                <div class="portfolio-play-overlay">
+                  <span class="portfolio-play-btn">
+                    <i class="fa-solid fa-play"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="portfolio-overlay">
+                <span class="cat">Video Editing</span>
+                <h5>Kunjungan Industri — Mayora</h5>
+              </div>
+              <div class="portfolio-view-btn">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4" data-aos="fade-up">
+          <a
+            href="https://drive.google.com/drive/folders/1EuNJAzgy9FDjkEpjAxyFGmAYMWNnVEM1?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-af btn-af-outline"
+            >Lihat Semua Portofolio <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Modal -->
+    <div
+      class="modal fade af-modal"
+      id="portfolioModal"
+      tabindex="-1"
+      aria-labelledby="portfolioModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+<button
+            type="button"
+            class="modal-close-btn position-absolute top-0 end-0 m-3"
+            data-bs-dismiss="modal"
+            aria-label="Tutup"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="modal-body">
+            <!-- Gambar (non-video) -->
+            <img
+              id="modalImg"
+              src=""
+              alt="Detail Portofolio"
+              class="af-modal-img"
+            />
+            <!-- Video player (Google Drive direct) — disembunyikan default -->
+            <div class="portfolio-modal-video" id="modalVideoWrap" style="display: none;">
+              <div class="portfolio-modal-video-ratio">
+                <!-- Loading spinner -->
+                <div class="video-loading-spinner" id="videoLoadingSpinner"></div>
+                <!-- HTML5 Video -->
+                <video
+                  id="modalVideoPlayer"
+                  class="modal-video-player"
+                  controls
+                  playsinline
+                  preload="metadata"
+                  poster=""
+                >
+                  Your browser does not support the video tag.
+                </video>
+                <!-- Fallback: open in Google Drive / new tab -->
+                <a
+                  href="#"
+                  id="videoFallbackLink"
+                  class="video-fallback-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-external-link-alt"></i> Buka di Google Drive
+                </a>
+              </div>
+            </div>
+            <div class="af-modal-body-content">
+              <span class="blog-cat" id="modalCat">Kategori</span>
+              <h3 class="mt-3 mb-2" id="modalTitle">Judul Proyek</h3>
+              <p id="modalDesc">Deskripsi proyek.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Modal -->
+    <div
+      class="modal fade af-modal blog-modal"
+      id="blogModal"
+      tabindex="-1"
+      aria-labelledby="blogModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="modal-close-btn position-absolute top-0 end-0 m-3"
+            data-bs-dismiss="modal"
+            aria-label="Tutup"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="modal-body">
+            <img
+              id="blogModalImg"
+              src=""
+              alt="Artikel Blog"
+              class="af-modal-img"
+            />
+            <div class="af-modal-body-content">
+              <div class="blog-modal-meta">
+                <span class="blog-cat" id="blogModalCat">Kategori</span>
+                <span class="blog-modal-date" id="blogModalDate">
+                  <i class="fa-regular fa-calendar"></i> <span></span>
+                </span>
+              </div>
+              <h3 class="mt-3 mb-3" id="blogModalTitle">Judul Artikel</h3>
+              <div class="blog-modal-body" id="blogModalBody">
+                <!-- Konten artikel akan diisi oleh JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonial-section" id="testimoni">
+      <div class="container">
+        <div
+          class="row justify-content-center text-center section-header"
+          data-aos="fade-up"
+        >
+          <div class="col-lg-7">
+            <span class="eyebrow"
+              ><i class="fa-solid fa-comment-dots"></i> Testimoni</span
+            >
+            <h2 class="section-title">
+              Apa Kata <span class="text-gradient">Klien Kami</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="swiper testimonial-swiper" data-aos="zoom-in">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-card glass-card">
+                <div class="testimonial-stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-quote">
+                  Afterline berhasil membangun website perusahaan kami dengan
+                  tampilan yang jauh lebih profesional. Prosesnya cepat dan
+                  komunikasinya sangat enak.
+                </p>
+                <div class="testimonial-person">
+                  <img
+                    src="https://i.pravatar.cc/150?img=15"
+                    alt="Rizky Ananda"
+                  />
+                  <div class="text-start">
+                    <h6>Rizky Ananda</h6>
+                    <span>Founder, Nexoria Retail</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card glass-card">
+                <div class="testimonial-stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-quote">
+                  Hasil video promosi dari tim Afterline benar-benar
+                  meningkatkan engagement konten media sosial kami. Editingnya
+                  rapi dan sesuai brief.
+                </p>
+                <div class="testimonial-person">
+                  <img
+                    src="https://i.pravatar.cc/150?img=25"
+                    alt="Dinda Pratiwi"
+                  />
+                  <div class="text-start">
+                    <h6>Dinda Pratiwi</h6>
+                    <span>Marketing Manager, Kopi Senja</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card glass-card">
+                <div class="testimonial-stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-quote">
+                  Layanan data scraping dari Afterline sangat membantu riset
+                  kompetitor kami. Data yang diberikan rapi, akurat, dan tepat
+                  waktu.
+                </p>
+                <div class="testimonial-person">
+                  <img
+                    src="https://i.pravatar.cc/150?img=33"
+                    alt="Bagas Wirawan"
+                  />
+                  <div class="text-start">
+                    <h6>Bagas Wirawan</h6>
+                    <span>Business Analyst, Bumi Data</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card glass-card">
+                <div class="testimonial-stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-quote">
+                  Logo dan identitas brand yang dibuat Afterline benar-benar
+                  merepresentasikan visi perusahaan kami. Sangat
+                  direkomendasikan!
+                </p>
+                <div class="testimonial-person">
+                  <img
+                    src="https://i.pravatar.cc/150?img=51"
+                    alt="Farah Salsabila"
+                  />
+                  <div class="text-start">
+                    <h6>Farah Salsabila</h6>
+                    <span>CEO, Forgear Apparel</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Navigasi Panah -->
+          <div class="testimonial-nav testimonial-prev" aria-label="Sebelumnya">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div class="testimonial-nav testimonial-next" aria-label="Selanjutnya">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="swiper-pagination mt-4"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== OUR CLIENTS + TOOLS & TECHNOLOGY ===================== -->
+    <section style="padding: 90px 0">
+      <div class="container">
+        <div style="margin-bottom: 60px;">
+          <p
+            class="text-center text-uppercase mb-3"
+            style="
+              letter-spacing: 2px;
+              font-size: 13px;
+              color: var(--sub-text);
+              font-weight: 600;
+            "
+            data-aos="fade-up"
+          >
+            Dipercaya oleh berbagai brand dan bisnis
+          </p>
+          <div class="clients-marquee" data-aos="fade-up">
+            <div class="clients-track">
+              <div class="client-logo"><i class="fa-solid fa-cube"></i> Nexoria</div>
+              <div class="client-logo"><i class="fa-solid fa-mug-hot"></i> Kopi Senja</div>
+              <div class="client-logo"><i class="fa-solid fa-shield-halved"></i> Forgear</div>
+              <div class="client-logo"><i class="fa-solid fa-chart-simple"></i> Bumi Data</div>
+              <div class="client-logo"><i class="fa-solid fa-leaf"></i> Hijaunesia</div>
+              <div class="client-logo"><i class="fa-solid fa-bolt"></i> Voltra</div>
+              <div class="client-logo"><i class="fa-solid fa-store"></i> Pasar Lokal</div>
+              <div class="client-logo"><i class="fa-solid fa-cube"></i> Nexoria</div>
+              <div class="client-logo"><i class="fa-solid fa-mug-hot"></i> Kopi Senja</div>
+              <div class="client-logo"><i class="fa-solid fa-shield-halved"></i> Forgear</div>
+              <div class="client-logo"><i class="fa-solid fa-chart-simple"></i> Bumi Data</div>
+              <div class="client-logo"><i class="fa-solid fa-leaf"></i> Hijaunesia</div>
+              <div class="client-logo"><i class="fa-solid fa-bolt"></i> Voltra</div>
+              <div class="client-logo"><i class="fa-solid fa-store"></i> Pasar Lokal</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p
+            class="text-center text-uppercase mb-4"
+            style="
+              letter-spacing: 2px;
+              font-size: 13px;
+              color: var(--sub-text);
+              font-weight: 600;
+            "
+            data-aos="fade-up"
+          >
+            Tools &amp; Teknologi yang Kami Gunakan
+          </p>
+        <div class="tools-marquee" data-aos="fade-up">
+          <div class="tools-track">
+            <div class="tool-logo"><i class="fa-brands fa-html5"></i> HTML</div>
+            <div class="tool-logo">
+              <i class="fa-brands fa-css3-alt"></i> CSS
+            </div>
+            <div class="tool-logo">
+              <i class="fa-brands fa-js"></i> JavaScript
+            </div>
+            <div class="tool-logo">
+              <i class="fa-brands fa-bootstrap"></i> Bootstrap
+            </div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-database"></i> SQL
+            </div>
+            <div class="tool-logo"><i class="fa-brands fa-java"></i> Java</div>
+            <div class="tool-logo"><i class="fa-brands fa-php"></i> PHP</div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-pen-ruler"></i> Canva
+            </div>
+            <div class="tool-logo">
+              <i class="fa-brands fa-android"></i> Android Studio
+            </div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-code"></i> VS Code
+            </div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-video"></i> CapCut
+            </div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-palette"></i> CorelDRAW
+            </div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-robot"></i> Computer Vision
+            </div>
+            <div class="tool-logo">
+              <i class="fa-brands fa-python"></i> Python
+            </div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-chart-pie"></i> Data Mining
+            </div>
+            <div class="tool-logo"><i class="fa-solid fa-cube"></i> OpenCV</div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-brain"></i> TensorFlow
+            </div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-fire"></i> Laravel
+            </div>
+            <div class="tool-logo">
+              <i class="fa-brands fa-figma"></i> Figma
+            </div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-images"></i> Photoshop
+            </div>
+            <!-- Duplikat untuk infinite scroll -->
+            <div class="tool-logo"><i class="fa-brands fa-html5"></i> HTML</div>
+            <div class="tool-logo">
+              <i class="fa-brands fa-css3-alt"></i> CSS
+            </div>
+            <div class="tool-logo">
+              <i class="fa-brands fa-js"></i> JavaScript
+            </div>
+            <div class="tool-logo">
+              <i class="fa-brands fa-bootstrap"></i> Bootstrap
+            </div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-database"></i> SQL
+            </div>
+            <div class="tool-logo"><i class="fa-brands fa-java"></i> Java</div>
+            <div class="tool-logo"><i class="fa-brands fa-php"></i> PHP</div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-pen-ruler"></i> Canva
+            </div>
+            <div class="tool-logo">
+              <i class="fa-brands fa-android"></i> Android Studio
+            </div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-code"></i> VS Code
+            </div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-video"></i> CapCut
+            </div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-palette"></i> CorelDRAW
+            </div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-robot"></i> Computer Vision
+            </div>
+            <div class="tool-logo">
+              <i class="fa-brands fa-python"></i> Python
+            </div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-chart-pie"></i> Data Mining
+            </div>
+            <div class="tool-logo"><i class="fa-solid fa-cube"></i> OpenCV</div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-brain"></i> TensorFlow
+            </div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-fire"></i> Laravel
+            </div>
+            <div class="tool-logo">
+              <i class="fa-brands fa-figma"></i> Figma
+            </div>
+            <div class="tool-logo">
+              <i class="fa-solid fa-images"></i> Photoshop
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRICING ===================== -->
+    <section class="pricing-section" id="harga">
+      <div class="container">
+        <div
+          class="row justify-content-center text-center section-header"
+          data-aos="fade-up"
+        >
+          <div class="col-lg-7">
+            <span class="eyebrow"
+              ><i class="fa-solid fa-tags"></i> Paket Harga</span
+            >
+            <h2 class="section-title">
+              Pilih <span class="text-gradient">Paket Terbaik</span>
+            </h2>
+            <p class="section-sub mx-auto mt-3">
+              Paket fleksibel yang bisa disesuaikan dengan kebutuhan dan skala
+              proyek Anda.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="pricing-card glass-card">
+              <div class="pricing-name">Starter</div>
+              <p class="plan-desc">
+                Pilih layanan yang Anda butuhkan — cocok untuk mulai dengan satu project.
+              </p>
+              <div class="pricing-price">Rp 500rb <span>/ layanan</span></div>
+              <ul class="pricing-features">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Bebas pilih layanan apa saja
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> 2x revisi desain
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Pengerjaan 3 hari
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Hasil siap pakai
+                </li>
+              </ul>
+              <a href="https://wa.me/6282289331347?text=Halo%20Afterline%2C%20saya%20tertarik%20dengan%20paket%20*Starter*%20(Rp500rb%2Flayanan).%0A%0ASaya%20ingin%20konsultasi%20lebih%20lanjut%20mengenai%20layanan%20yang%20saya%20butuhkan." target="_blank" rel="noopener noreferrer" class="btn-af btn-af-outline">Pilih Paket</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="zoom-in">
+            <div class="pricing-card glass-card highlight">
+              <div class="pricing-badge">Paling Populer</div>
+              <div class="pricing-name">Professional</div>
+              <p class="plan-desc">
+                Solusi lengkap untuk bisnis yang ingin tumbuh lebih cepat.
+              </p>
+              <div class="pricing-price" style="display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap;">
+                <span style="font-size: 20px; text-decoration: line-through; color: rgba(255,255,255,0.5); font-weight: 500;">Rp 2jt</span>
+                <span style="font-size: 38px; font-weight: 700;">Rp 1,5jt</span>
+                <span style="font-size: 15px; font-weight: 500; color: rgba(255,255,255,0.8);">/ proyek</span>
+              </div>
+              <ul class="pricing-features">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Website hingga 5
+                  halaman
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Logo &amp; branding
+                  dasar
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> 5x revisi desain
+                </li>
+                <li><i class="fa-solid fa-circle-check"></i> Source code &amp; aset lengkap</li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Pengerjaan 7 hari
+                </li>
+              </ul>
+              <a href="https://wa.me/6282289331347?text=Halo%20Afterline%2C%20saya%20tertarik%20dengan%20paket%20*Professional*%20(Rp1%2C5jt%2Fproyek).%0A%0ASaya%20ingin%20konsultasi%20lebih%20lanjut%20untuk%20memulai%20proyek%20saya." target="_blank" rel="noopener noreferrer" class="btn-af btn-af-primary">Pilih Paket</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-card glass-card">
+              <div class="pricing-name">Enterprise</div>
+              <p class="plan-desc">
+                Untuk kebutuhan proyek kompleks dan skala besar.
+              </p>
+              <div class="pricing-price">Custom <span>/ diskusi</span></div>
+              <ul class="pricing-features">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Website / sistem
+                  custom
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Branding menyeluruh
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Revisi tanpa batas
+                  wajar
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Dukungan prioritas
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i> Timeline sesuai
+                  kesepakatan
+                </li>
+              </ul>
+              <a href="#kontak" class="btn-af btn-af-outline">Konsultasi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section id="faq">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-5 faq-header-col" data-aos="fade-right">
+            <div class="faq-header-decor">
+              <div class="faq-splash-pink"></div>
+              <div class="faq-splash-dot d1"></div>
+              <div class="faq-splash-dot d2"></div>
+              <div class="faq-splash-dot d3"></div>
+              <div class="faq-splash-dot d4"></div>
+              <div class="faq-splash-dot d5"></div>
+              <div class="faq-splash-dot d6"></div>
+            </div>
+            <span class="eyebrow faq-eyebrow"
+              ><i class="fa-solid fa-circle-question"></i> FAQ</span
+            >
+            <h2 class="section-title mb-3">
+              Pertanyaan yang <span class="text-gradient">Sering Diajukan</span>
+            </h2>
+            <p class="section-sub">
+              Masih ada pertanyaan lain? Jangan ragu untuk menghubungi tim kami
+              secara langsung.
+            </p>
+            <a href="#kontak" class="btn-af btn-af-primary mt-4"
+              >Hubungi Kami <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="faq-item glass-card active">
+              <div class="faq-question">
+                <span class="faq-question-text">Berapa lama proses pengerjaan proyek?</span>
+                <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Waktu pengerjaan bervariasi tergantung kompleksitas proyek,
+                  mulai dari 3 hari untuk desain sederhana hingga beberapa
+                  minggu untuk pengembangan website atau sistem kompleks.
+                  Estimasi waktu akan disampaikan setelah diskusi kebutuhan.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item glass-card">
+              <div class="faq-question">
+                <span class="faq-question-text">Apakah ada jaminan revisi?</span>
+                <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Ya, setiap paket layanan sudah termasuk sejumlah revisi sesuai
+                  ketentuan paket. Kami memastikan hasil akhir sesuai dengan
+                  kebutuhan dan kepuasan Anda.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item glass-card">
+              <div class="faq-question">
+                <span class="faq-question-text">Bagaimana sistem pembayarannya?</span>
+                <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Pembayaran dilakukan dengan sistem DP di awal proyek dan
+                  pelunasan setelah proyek selesai dan disetujui. Detail metode
+                  pembayaran akan dijelaskan saat konsultasi.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item glass-card">
+              <div class="faq-question">
+                <span class="faq-question-text">Apakah Afterline melayani klien di luar kota?</span>
+                <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Tentu. Kami melayani klien dari berbagai kota secara online,
+                  mulai dari diskusi kebutuhan, proses pengerjaan, hingga
+                  pengiriman hasil akhir dilakukan secara digital.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item glass-card">
+              <div class="faq-question">
+                <span class="faq-question-text">Apakah bisa memesan lebih dari satu layanan sekaligus?</span>
+                <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Bisa. Kami menyediakan paket gabungan layanan, misalnya
+                  website sekaligus branding, dengan harga yang lebih efisien
+                  dibanding memesan secara terpisah.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BLOG ===================== -->
+    <section id="blog">
+      <div class="bg-decor">
+        <div
+          class="glow-blob purple"
+          style="width: 400px; height: 400px; top: 0%; right: -150px"
+        ></div>
+      </div>
+      <div class="container">
+        <div
+          class="row justify-content-center text-center section-header"
+          data-aos="fade-up"
+        >
+          <div class="col-lg-7">
+            <span class="eyebrow"
+              ><i class="fa-solid fa-newspaper"></i> Blog Kami</span
+            >
+            <h2 class="section-title">
+              Artikel <span class="text-gradient">Terbaru</span>
+            </h2>
+            <p class="section-sub mx-auto mt-3">
+              Wawasan seputar dunia digital, desain, dan strategi branding.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="blog-card glass-card">
+              <div class="blog-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=700&q=80"
+                  alt="Tips memilih jasa pembuatan website"
+                  loading="lazy"
+                />
+              </div>
+              <div class="blog-body">
+                <span class="blog-cat">Web Development</span>
+                <h4>
+                  5 Hal yang Perlu Diperhatikan Sebelum Membuat Website Bisnis
+                </h4>
+                <div class="blog-meta">
+                  <span
+                    ><i class="fa-regular fa-calendar"></i> 18 Juli 2026</span
+                  >
+                  <a href="#" class="blog-read-more"
+                    >Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="blog-card glass-card">
+              <div class="blog-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=700&q=80"
+                  alt="Pentingnya branding untuk bisnis"
+                  loading="lazy"
+                />
+              </div>
+              <div class="blog-body">
+                <span class="blog-cat">Branding</span>
+                <h4>
+                  Kenapa Identitas Brand yang Kuat Menentukan Kepercayaan
+                  Pelanggan
+                </h4>
+                <div class="blog-meta">
+                  <span
+                    ><i class="fa-regular fa-calendar"></i> 10 Juli 2026</span
+                  >
+                  <a href="#" class="blog-read-more"
+                    >Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="blog-card glass-card">
+              <div class="blog-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80"
+                  alt="Manfaat data scraping untuk riset bisnis"
+                  loading="lazy"
+                />
+              </div>
+              <div class="blog-body">
+                <span class="blog-cat">Data Scraping</span>
+                <h4>
+                  Memanfaatkan Data Scraping untuk Riset Kompetitor yang Lebih
+                  Akurat
+                </h4>
+                <div class="blog-meta">
+                  <span
+                    ><i class="fa-regular fa-calendar"></i> 2 Juli 2026</span
+                  >
+                  <a href="#" class="blog-read-more"
+                    >Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact-section" id="kontak">
+      <div class="container">
+        <div
+          class="row justify-content-center text-center section-header"
+          data-aos="fade-up"
+        >
+          <div class="col-lg-7">
+            <span class="eyebrow"
+              ><i class="fa-solid fa-envelope"></i> Kontak Kami</span
+            >
+            <h2 class="section-title">
+              Hubungi Kami <span class="text-gradient">Sekarang</span>
+            </h2>
+            <p class="section-sub mx-auto mt-3">
+              Kami siap membantu Anda mewujudkan ide dan kebutuhan digital
+              terbaik.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h6>Lokasi</h6>
+                <p>Bandar Lampung, Indonesia</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <h6>WhatsApp</h6>
+                <p>0822 8933 1347</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <h6>Email</h6>
+                <p>afterlinecorp@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h6>Jam Operasional</h6>
+                <p>Senin – Sabtu (08.00 – 18.00)</p>
+              </div>
+            </div>
+
+            <div class="contact-map">
+              <iframe
+                src="https://www.google.com/maps?q=Bandar%20Lampung&output=embed"
+                loading="lazy"
+                title="Lokasi Afterline di Bandar Lampung"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <div class="social-row">
+              <a
+                href="https://www.instagram.com/afterlineid?igsh=bTdhZTRsM3NjZ2o1"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram Afterline"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook Afterline"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://tiktok.com/@afterlineid"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok Afterline"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Afterline"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="contact-form-card glass-card">
+              <span class="eyebrow">Kirim Pesan</span>
+              <form id="contactForm" novalidate>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label-af"
+                      >Nama Lengkap</label
+                    >
+                    <input
+                      type="text"
+                      id="fullName"
+                      class="form-control-af"
+                      placeholder="Masukkan nama Anda"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="emailAddr" class="form-label-af">Email</label>
+                    <input
+                      type="email"
+                      id="emailAddr"
+                      class="form-control-af"
+                      placeholder="Masukkan email Anda"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phoneNum" class="form-label-af"
+                      >Nomor Telepon</label
+                    >
+                    <input
+                      type="tel"
+                      id="phoneNum"
+                      class="form-control-af"
+                      placeholder="Masukkan nomor telepon"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="serviceType" class="form-label-af"
+                      >Layanan</label
+                    >
+                    <select id="serviceType" class="form-control-af" required>
+                      <option value="" selected disabled>Pilih layanan</option>
+                      <option>Website Development</option>
+                      <option>Video Editing</option>
+                      <option>Logo &amp; Branding</option>
+                      <option>Graphic Design</option>
+                      <option>Data Scraping</option>
+                      <option>Preprocessing Data</option>
+                      <option>Konveksi &amp; Sablon</option>
+                      <option>Iklan Aplikasi</option>
+                      <option>Pembuatan Aplikasi</option>
+                      <option>Sistem Computer Vision</option>
+                      <option>Edit Foto</option>
+                      <option>Konsultasi Custom</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="messageBody" class="form-label-af">Pesan</label>
+                    <textarea
+                      id="messageBody"
+                      class="form-control-af"
+                      placeholder="Tulis pesan Anda..."
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="btn-af btn-af-primary w-100" id="sendMessageBtn">
+                  Kirim Pesan <i class="fa-solid fa-paper-plane" id="planeIcon"></i>
+                </button>
+                <div class="form-status" id="formStatus"></div>
+
+                <!-- Paper Plane Animation -->
+                <div class="paper-plane-wrapper" id="paperPlaneWrapper">
+                  <div class="paper-plane" id="paperPlane">
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </div>
+                  <div class="plane-trail" id="planeTrail"></div>
+                </div>
+
+                <!-- Success Toast Notification -->
+                <div class="success-toast" id="successToast">
+                  <div class="toast-icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="toast-content">
+                    <strong>Pesan Berhasil Terkirim! &#10003;</strong>
+                    <span>Terima kasih, tim kami akan segera menghubungi Anda.</span>
+                  </div>
+                  <button class="toast-close" id="toastClose" aria-label="Tutup">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER (bagian yang diperbaiki) ===================== -->
+    <footer class="af-footer">
+      <div class="container">
+        <div class="af-footer-grid">
+          <!-- Kolom 1: Logo & Deskripsi -->
+          <div class="af-footer-col">
+            <a href="#beranda" class="af-logo mb-3">
+              <img
+                src="assets/logo-mark.png"
+                alt="Logo Afterline"
+                class="logo-mark"
+              />
+              <span class="logo-text-wrap">
+                AFTERLINE
+                <span class="logo-tagline">Built After Vision</span>
+              </span>
+            </a>
+            <p class="mt-3">
+              Creative Digital Agency yang menggabungkan teknologi dan
+              kreativitas untuk membangun brand masa depan.
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://www.instagram.com/afterlineid?igsh=bTdhZTRsM3NjZ2o1"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram Afterline"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook Afterline"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://tiktok.com/@afterlineid"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok Afterline"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Afterline"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Kolom 2: Tautan -->
+          <div class="af-footer-col">
+            <h6 class="footer-title">Tautan</h6>
+            <ul class="footer-links">
+              <li><a href="#beranda">Beranda</a></li>
+              <li><a href="#tentang">Tentang</a></li>
+              <li><a href="#portofolio">Portofolio</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#kontak">Kontak</a></li>
+            </ul>
+          </div>
+
+          <!-- Kolom 3: Layanan -->
+          <div class="af-footer-col af-footer-col-wide">
+            <h6 class="footer-title">Layanan</h6>
+            <ul class="footer-links footer-links-grid">
+              <li><a href="#layanan">Website Development</a></li>
+              <li><a href="#layanan">Konveksi &amp; Sablon</a></li>
+              <li><a href="#layanan">Video Editing</a></li>
+              <li><a href="#layanan">Iklan Aplikasi</a></li>
+              <li><a href="#layanan">Logo &amp; Branding</a></li>
+              <li><a href="#layanan">Pembuatan Aplikasi</a></li>
+              <li><a href="#layanan">Graphic Design</a></li>
+              <li><a href="#layanan">Sistem Computer Vision</a></li>
+              <li><a href="#layanan">Data Scraping</a></li>
+              <li><a href="#layanan">Edit Foto</a></li>
+              <li><a href="#layanan">Preprocessing Data</a></li>
+              <li><a href="#layanan">Konsultasi Custom</a></li>
+            </ul>
+          </div>
+
+          <!-- Kolom 4: Newsletter -->
+          <div class="af-footer-col">
+            <h6 class="footer-title">Newsletter</h6>
+            <p>Dapatkan info promo dan artikel terbaru dari Afterline.</p>
+            <form class="newsletter-form" onsubmit="return false;">
+              <label for="newsletterEmail" class="visually-hidden"
+                >Email untuk newsletter</label
+              >
+              <input
+                type="email"
+                id="newsletterEmail"
+                placeholder="Email Anda"
+              />
+              <button type="submit" aria-label="Berlangganan">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>&copy; 2026 Afterline. Seluruh hak cipta dilindungi.</span>
+          <span>Built After Vision — Bandar Lampung, Indonesia</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Kembali ke atas">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ===================== SCRIPTS ===================== -->
+    <!-- Bootstrap (wajib di awal untuk navbar collapse & modal) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- GSAP (wajib untuk hero animasi) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <!-- Lazy Load: ScrollTrigger -->
+    <script>
+      (function () {
+        var s = document.createElement('script');
+        s.src =
+          'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js';
+        s.defer = true;
+        document.body.appendChild(s);
+      })();
+    </script>
+
+    <!-- Lazy Load: AOS -->
+    <script>
+      (function () {
+        var s = document.createElement('script');
+        s.src = 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js';
+        s.defer = true;
+        s.onload = function () {
+          if (window.AOS) {
+            AOS.init({
+              duration: 800,
+              easing: 'ease-out-cubic',
+              once: false,
+              offset: 80,
+            });
+          }
+        };
+        document.body.appendChild(s);
+      })();
+    </script>
+
+    <!-- Lazy Load: SwiperJS -->
+    <script>
+      (function () {
+        var s = document.createElement('script');
+        s.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
+        s.defer = true;
+        document.body.appendChild(s);
+      })();
+    </script>
+
+    <!-- Typed.js (load normal — wajib untuk hero, sebelum script.js) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+
+    <!-- Portfolio Video Data (defer — data video dari Google Drive) -->
+    <script src="portfolio-video-data.js" defer></script>
+
+    <!-- Custom Script (defer — jalan setelah library lain) -->
+    <script src="script.js" defer></script>
+
+    <!-- Blog Articles (defer — terpisah dari main script) -->
+    <script src="blog/articles.js" defer></script>
+  </body>
+</html>
